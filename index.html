@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC MESSENGER - Legal Documents</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f1b3d, #182b57, #1f345f);
+            color: #222;
+        }
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+        .card {
+            width: 100%;
+            max-width: 900px;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 14px 35px rgba(0,0,0,0.25);
+            padding: 30px 24px 24px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 6px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0 10px;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 12px 10px;
+            border-radius: 999px;
+            border: 1px solid #d0d4e4;
+            background: #f1f3fa;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .tab-btn.active {
+            background: #135bff;
+            color: #ffffff;
+            border-color: #135bff;
+        }
+        .tab-btn:hover {
+            filter: brightness(0.95);
+        }
+        .section {
+            display: none;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+        .section.active {
+            display: block;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 18px;
+        }
+        h3 {
+            font-size: 17px;
+            margin-top: 16px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 6px 0;
+        }
+        ul {
+            padding-left: 18px;
+            font-size: 14px;
+        }
+        a {
+            color: #135bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 18px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 22px 16px 16px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <script>
+        function showTab(id) {
+            const sections = document.querySelectorAll('.section');
+            const buttons = document.querySelectorAll('.tab-btn');
+            sections.forEach(sec => sec.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.querySelector('[data-target="'+id+'"]').classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('privacy');
+        });
+    </script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <header>
+            <h1>MUSIC MESSENGER</h1>
+            <p>Mobile Games Studio &nbsp;|&nbsp; Legal Information</p>
+        </header>
+
+        <nav>
+            <button class="tab-btn" data-target="privacy" onclick="showTab('privacy')">
+                Privacy Policy
+            </button>
+            <button class="tab-btn" data-target="terms" onclick="showTab('terms')">
+                Terms of Use
+            </button>
+        </nav>
+
+        <!-- PRIVACY POLICY -->
+        <section id="privacy" class="section">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated:</strong> 2025</p>
+
+            <p>
+                This Privacy Policy explains how MUSIC MESSENGER (“we”, “our”, or “us”)
+                handles information in connection with our mobile games (“the Apps”).
+                We are strongly committed to protecting players and keeping our games safe and simple.
+            </p>
+
+            <h3>1. Scope</h3>
+            <p>
+                This Policy applies to all mobile games and applications published by MUSIC MESSENGER,
+                regardless of platform (such as Google Play or other app stores).
+            </p>
+
+            <h3>2. We Do Not Collect Any Data</h3>
+            <p>
+                Our Apps are designed to run entirely on the user’s device.  
+                <strong>We do not collect, store, process, or share any personal or non-personal data.</strong>
+            </p>
+            <p>This means, in particular, that we do not collect:</p>
+            <ul>
+                <li>Names, nicknames, or contact details (email, phone, address)</li>
+                <li>Location data (GPS, IP-based, or approximate location)</li>
+                <li>Device identifiers, advertising IDs, or other technical IDs</li>
+                <li>Usage statistics, analytics, or gameplay behavior</li>
+                <li>Payment information or purchase history</li>
+                <li>Any other information that could identify a user</li>
+            </ul>
+
+            <h3>3. No Third-Party SDKs or Tracking Technologies</h3>
+            <p>
+                Our Apps do not integrate advertising networks, analytics SDKs, social media plug-ins,
+                or any similar third-party technologies that might collect information about you.
+            </p>
+            <p>
+                In other words, we do not use:
+            </p>
+            <ul>
+                <li>Advertising SDKs or ad-tracking tools</li>
+                <li>Analytics SDKs or crash/usage analytics</li>
+                <li>Push notification services linked to user identifiers</li>
+                <li>Cookies or similar tracking technologies</li>
+            </ul>
+
+            <h3>4. Children’s Privacy</h3>
+            <p>
+                Our Apps are suitable for a wide audience, including younger players.  
+                Because we do not collect any information, we do not knowingly collect data from children
+                under any specific age threshold (such as 13 or 16) under applicable law.
+            </p>
+
+            <h3>5. Local Storage on Device</h3>
+            <p>
+                Certain game elements (such as level progress, scores, unlocked items) may be stored
+                locally on the user’s device only. This information never leaves the device and is
+                not accessible to us.
+            </p>
+
+            <h3>6. Data Security</h3>
+            <p>
+                Since we do not operate any servers or databases for user data, there is no central place
+                where personal information is stored. Game data saved locally on the device is protected
+                by the device’s own security mechanisms and operating system.
+            </p>
+
+            <h3>7. Changes to This Privacy Policy</h3>
+            <p>
+                We may update this Privacy Policy from time to time, for example if our Apps change
+                or if legal requirements are updated. The “Last Updated” date at the top of the Policy
+                will reflect the latest version.
+            </p>
+            <p>
+                If we ever decide in the future to collect or process data (for example, to add ads or analytics),
+                we will update this Policy in advance and make sure that any required notices and consents
+                are properly implemented.
+            </p>
+
+            <h3>8. Contact Us</h3>
+            <p>
+                If you have any questions about this Privacy Policy or about our Apps, you can contact us at:
+            </p>
+            <p>
+                Email: <a href="mailto:ronshakarovv@gmail.com">ronshakarovv@gmail.com</a>
+            </p>
+        </section>
+
+        <!-- TERMS OF USE -->
+        <section id="terms" class="section">
+            <h2>Terms of Use</h2>
+            <p><strong>Last Updated:</strong> 2025</p>
+
+            <p>
+                These Terms of Use (“Terms”) govern your use of the mobile games and applications
+                provided by MUSIC MESSENGER (“we”, “our”, or “us”). By installing or using any of our Apps,
+                you agree to these Terms.
+            </p>
+
+            <h3>1. License to Use the Apps</h3>
+            <p>
+                We grant you a limited, non-exclusive, non-transferable, revocable license to download
+                and use the Apps for personal, non-commercial entertainment purposes only, in accordance
+                with these Terms and any applicable store rules (such as Google Play terms).
+            </p>
+
+            <h3>2. No Data Collection</h3>
+            <p>
+                Our Apps are designed so that we do not collect personal information from users.
+                All gameplay activity (such as scores or levels) remains on your device only.
+            </p>
+
+            <h3>3. User Conduct</h3>
+            <p>You agree that you will not:</p>
+            <ul>
+                <li>Reverse-engineer, decompile, or attempt to access the source code of the Apps</li>
+                <li>Modify, distribute, or create derivative works based on the Apps</li>
+                <li>Use the Apps for any unlawful, harmful, or fraudulent purpose</li>
+                <li>Exploit bugs or glitches in a way that harms the experience of other users</li>
+            </ul>
+
+            <h3>4. Intellectual Property</h3>
+            <p>
+                All copyrights, trademarks, graphics, sounds, game assets, and other content included
+                in the Apps are owned by MUSIC MESSENGER or licensed to us.  
+                You receive only a limited right to use the Apps; no ownership rights are transferred.
+            </p>
+
+            <h3>5. Virtual Items and Game Content</h3>
+            <p>
+                Some Apps may contain virtual items, in-game currency, levels, or cosmetic elements.
+                These items are part of the game service and have no real-world monetary value.
+                We may change, balance, or remove such items at any time.
+            </p>
+
+            <h3>6. Availability and Updates</h3>
+            <p>
+                We may update, suspend, or discontinue any App (or any part of it) at any time,
+                for example to fix issues, improve gameplay, or comply with store policies.
+                We are not obligated to maintain or support any specific feature or version.
+            </p>
+
+            <h3>7. Disclaimer of Warranties</h3>
+            <p>
+                The Apps are provided “as is” and “as available”, without any warranties of any kind,
+                whether express or implied. We do not guarantee that the Apps will be error-free,
+                uninterrupted, or compatible with every device or operating system.
+            </p>
+
+            <h3>8. Limitation of Liability</h3>
+            <p>
+                To the maximum extent permitted by applicable law, MUSIC MESSENGER will not be liable
+                for any indirect, incidental, or consequential damages arising out of or relating to
+                your use of the Apps, including loss of data, loss of progress, device issues,
+                or other similar damages.
+            </p>
+
+            <h3>9. Changes to These Terms</h3>
+            <p>
+                We may update these Terms from time to time. The updated version will be posted here with
+                a new “Last Updated” date. Continuing to use the Apps after changes take effect
+                means you accept the revised Terms.
+            </p>
+
+            <h3>10. Contact</h3>
+            <p>
+                For any questions regarding these Terms or our Apps, please contact:
+            </p>
+            <p>
+                Email: <a href="mailto:ronshakarovv@gmail.com">ronshakarovv@gmail.com</a>
+            </p>
+        </section>
+
+        <div class="footer">
+            © 2025 MUSIC MESSENGER. All rights reserved.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
